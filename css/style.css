@@ -1,0 +1,131 @@
+@charset"UTF-8";
+/*@import 'url';*/
+
+/*Base-------------------------*/
+html{
+    font-size: 62.6%
+}
+
+body{
+    color:#4c4c4c;
+    font-size:1.4rem; 
+    font-family:'游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif; 
+    /* あるいは、'游明朝体', 'Yu Mincho','ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','メイリオ', Meiryo, serif; */
+    background-color:#fdfcf6;
+    color:#000000;
+    line-height:1.6;
+    letter-spacing:0.1em;
+}
+
+    /*a→リンク部分*/
+a{
+    color:#14c0c9;
+    text-decoration: none;
+}
+a:visited{
+    color:red;
+}
+a:hover{
+    color:red;
+}
+a:active{
+    color:red;
+}
+
+/*Align-------------------------*/
+.text-center{
+    text-align:center;
+}
+
+/*Layout-------------------------*/
+section.container{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*Font-------------------------*/
+
+/*Header-------------------------*/
+.box{
+    background-image:
+    url("../images/StockSnap_BY59S6FSEP.jpg") ;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*Contents-------------------------*/
+section{
+    padding:60px 0;
+}
+section h2{
+    font-size:3.2rem;
+}
+section.container{
+    width:90%;
+}
+#service{
+    background-color:#A6E39D;
+}
+#service .container{
+    display:-webkit-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+#service .service-box{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-flex: 1;
+            flex: 1;
+    margin: 10px 10px;/*ボックス間に隙間を作る*/
+    padding: 20px;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    background-color:#E4EC5B;
+    width:auto;
+    height:auto;
+}
+@media (max-width: 768px) {
+    .box{height:250px;}
+     .container {
+    flex-direction: column;
+  }
+}
+
+
+@media (min-width: 769px){
+    .box{
+        height:500px;
+    }
+     .container {
+    flex-direction: column;
+}
+}
+    
+#service h3{
+    font-size:2.4rem;
+    margin-bottom:10px;
+}
+#service p{
+    text-align:center;
+}
+#information .button-moreinformation{
+    background-color:#3EBA2B;
+    border-radius:10px;
+    text-align:center;
+    margin:0 auto;
+    width:150px;
+    height:30px;
+}
+.button-moreinformation a{/*ボタンの文字以外にもリンクをつける*/
+    display: block;
+}
+/*Footer-------------------------*/
+footer{
+    text-align:center;
+}
